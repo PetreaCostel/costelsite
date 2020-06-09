@@ -147,10 +147,104 @@ button {
 .tel li a:hover {
   background-color: rgb(130, 255, 242);
 }
-. {
+.dum {
   background-color: indianred;
   text-align: center;
   margin-left: 830px;
   margin-right: 830px;
   color: rgb(255, 255, 255);
   height: 40px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  height: 1000px;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  width: 200px;
+}
+.sticky2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  width: 200px;
+}
+.sticky3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  width: 200px;
+}
+.xyz {
+  display: block;
+  margin-left: 610px;
+}
+.xyz2 {
+  display: block;
+  margin-left: 75px;
+}
+.xyz3 {
+  margin-left: -450px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container2 {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}

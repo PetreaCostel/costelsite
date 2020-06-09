@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artworks</title>
+    <link rel="shortcut icon" href="me.ico" />
+  <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body class="sall" >
+    <div class="navbar">
+      <a href="contact.html">Contact</a>
+      <a href="playlist.html">Playlist</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="index.html">Home</a>
+    </div>
+    <div class="salll">
+    <br></br>
+    <h1 class="dum" > Artworks </h1>
+    <div style="text-align:center">
+        <h2>My Artworks</h2>
+        <p>Click on the images below:</p>
+      </div>
+      
+      <!-- The four columns -->
+      <div class="row">
+        <div class="column">
+          <img src="afas.gif" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="afas2.gif" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="afas3.gif" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="afas.gif" alt="Nature" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="afas2.gif" alt="Snow" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="afas3.gif" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+          </div>
+      </div>
+      
+      <div class="container2">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+    </div>
+    <div class="footer">
+      <div class="footer-content"> 
+        <div class="footer-section about"></div>
+        <div class="footer-section links"></div>
+        <div class="footer-section contact-form"></div>
+      </div>
+      <div class="footer-bottom"> 
+        &copy; 2020 Costel
+      </div>
+      
+    </div>
+  </body>
+</html>
